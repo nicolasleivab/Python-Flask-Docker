@@ -5,5 +5,7 @@ from .add_message import add_message_bp
 
 
 def register_routes(app):
-    app.register_blueprint(get_messages_bp)
-    app.register_blueprint(add_message_bp)
+    # Notice the url_prefix
+    app.register_blueprint(get_messages_bp, url_prefix='/')
+    # Notice the url_prefix
+    app.register_blueprint(add_message_bp, url_prefix='/')

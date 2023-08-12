@@ -23,3 +23,9 @@ curl -X POST -H "Content-Type: application/json" -d '{"content": "Hi there!"}' h
 ```
 
 Check messages in the browser at [http://localhost:8080/get_messages](http://localhost:8080/get_messages)
+
+Run tests
+
+```
+coverage run -m pytest tests/test_app.py
+```
