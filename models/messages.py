@@ -1,6 +1,8 @@
-from main import database
+from flask_sqlalchemy import SQLAlchemy
+
+db = SQLAlchemy()
 
 
-class Message(database.Model):
-    id = database.Column(database.Integer, primary_key=True)
-    content = database.Column(database.String(255))
+class Message(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    content = db.Column(db.String(255))

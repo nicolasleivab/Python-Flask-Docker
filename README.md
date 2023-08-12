@@ -19,7 +19,7 @@ python3 main.py
 Add a chat message to add_message route
 
 ```
-curl -X POST -H "Content-Type: application/json" -d '{"content": "Hello, world!"}' http://localhost:8080/add_message
+curl -X POST -H "Content-Type: application/json" -d '{"content": "Hi there!"}' http://localhost:8080/add_message
 ```
 
 Check messages in the browser at [http://localhost:8080/get_messages](http://localhost:8080/get_messages)
