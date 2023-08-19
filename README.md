@@ -4,7 +4,7 @@ Chat messages api built with python and flask.
 
 ### How to run Docker app
 
-Make sure you have an instance of Docker running in your machine and run:
+Make sure you have an instance of Docker running on your machine and run:
 
 ```
 docker-compose up
@@ -34,6 +34,12 @@ curl -X POST -H "Content-Type: application/json" -d '{"content": "Hi there!"}' h
 
 Check messages in the browser at [http://localhost:5555/get_messages](http://localhost:5555/get_messages)
 
+### Remove message
+
+```
+curl -X DELETE http://localhost:5555/delete_message/1
+```
+
 ### Stop container
 
 ```
@@ -46,7 +52,7 @@ docker-compose down
 docker-compose up --build test-service
 ```
 
-### Run tests in local
+### Run tests with local setup
 
 ```
 coverage run -m pytest tests/test_app.py
