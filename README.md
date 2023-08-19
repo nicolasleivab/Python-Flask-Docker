@@ -1,6 +1,6 @@
 # Python-Flask-Docker
 
-Chat messages api built with python and flask.
+Chat messages api built with Python-Flask and Docker.
 
 ### How to run Docker app
 
