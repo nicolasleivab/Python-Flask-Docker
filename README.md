@@ -34,7 +34,9 @@ curl -X POST -H "Content-Type: application/json" -d '{"content": "Hi there!"}' h
 
 Check messages in the browser at [http://localhost:5555/get_messages](http://localhost:5555/get_messages)
 
-### Remove message
+### Delete message
+
+Remove a message by passing its id as a param to delete_message route
 
 ```
 curl -X DELETE http://localhost:5555/delete_message/1
