@@ -34,7 +34,19 @@ curl -X POST -H "Content-Type: application/json" -d '{"content": "Hi there!"}' h
 
 Check messages in the browser at [http://localhost:5555/get_messages](http://localhost:5555/get_messages)
 
-### Run tests
+### Stop container
+
+```
+docker-compose down
+```
+
+### Run tests in Docker by building test-service
+
+```
+docker-compose up --build test-service
+```
+
+### Run tests in local
 
 ```
 coverage run -m pytest tests/test_app.py

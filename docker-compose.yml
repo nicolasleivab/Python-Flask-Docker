@@ -9,3 +9,12 @@ services:
     environment:
       PORT: 5555
       FLASK_DEBUG: 1
+
+  test-service:
+    build:
+      context: .
+      args:
+        ENV: test
+    volumes:
+      - .:/usr/src/app/
+    command: coverage run -m pytest tests/test_app.py && coverage report
